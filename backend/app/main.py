@@ -68,7 +68,7 @@ def issue_session(response: Response, user: dict[str, object]) -> dict[str, obje
         value=token,
         httponly=True,
         secure=SESSION_COOKIE_SECURE,
-        samesite="lax",
+        samesite="none",
         max_age=SESSION_TTL_SECONDS,
         path="/",
     )
