@@ -1,0 +1,23 @@
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@testing-library/jest-dom/dist/vitest.mjs");
+
+Object.defineProperty(window, "scrollTo", {
+	writable: true,
+	value: () => {}
+});
+Object.defineProperty(window, "matchMedia", {
+	writable: true,
+	value: (query) => ({
+		matches: false,
+		media: query,
+		onchange: null,
+		addListener: () => {},
+		removeListener: () => {},
+		addEventListener: () => {},
+		removeEventListener: () => {},
+		dispatchEvent: () => {}
+	})
+});
+//# sourceMappingSource=vite-generated
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBQUE7O0FBRUEsT0FBTyxlQUFlLFFBQVEsWUFBWTtDQUN4QyxVQUFVO0NBQ1YsYUFBYSxDQUFDO0FBQ2hCLENBQUM7QUFFRCxPQUFPLGVBQWUsUUFBUSxjQUFjO0NBQzFDLFVBQVU7Q0FDVixRQUFRLFdBQW1CO0VBQ3pCLFNBQVM7RUFDVCxPQUFPO0VBQ1AsVUFBVTtFQUNWLG1CQUFtQixDQUFDO0VBQ3BCLHNCQUFzQixDQUFDO0VBQ3ZCLHdCQUF3QixDQUFDO0VBQ3pCLDJCQUEyQixDQUFDO0VBQzVCLHFCQUFxQixDQUFDO0NBQ3hCO0FBQ0YsQ0FBQyIsIm5hbWVzIjpbXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZXMiOlsic2V0dXAudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFwiQHRlc3RpbmctbGlicmFyeS9qZXN0LWRvbS92aXRlc3RcIjtcblxuT2JqZWN0LmRlZmluZVByb3BlcnR5KHdpbmRvdywgXCJzY3JvbGxUb1wiLCB7XG4gIHdyaXRhYmxlOiB0cnVlLFxuICB2YWx1ZTogKCkgPT4ge30sXG59KTtcblxuT2JqZWN0LmRlZmluZVByb3BlcnR5KHdpbmRvdywgXCJtYXRjaE1lZGlhXCIsIHtcbiAgd3JpdGFibGU6IHRydWUsXG4gIHZhbHVlOiAocXVlcnk6IHN0cmluZykgPT4gKHtcbiAgICBtYXRjaGVzOiBmYWxzZSxcbiAgICBtZWRpYTogcXVlcnksXG4gICAgb25jaGFuZ2U6IG51bGwsXG4gICAgYWRkTGlzdGVuZXI6ICgpID0+IHt9LFxuICAgIHJlbW92ZUxpc3RlbmVyOiAoKSA9PiB7fSxcbiAgICBhZGRFdmVudExpc3RlbmVyOiAoKSA9PiB7fSxcbiAgICByZW1vdmVFdmVudExpc3RlbmVyOiAoKSA9PiB7fSxcbiAgICBkaXNwYXRjaEV2ZW50OiAoKSA9PiB7fSxcbiAgfSksXG59KTtcbiJdLCJmaWxlIjoiL3NyYy90ZXN0L3NldHVwLnRzIn0=
+
+//# vitestCache=W3siZmlsZSI6IjEiLCJpZCI6IjEiLCJ1cmwiOiIyIiwiaW1wb3J0ZWRVcmxzIjoiMyIsIm1hcHBpbmdzIjpmYWxzZX0sIkM6L1VzZXJzL3NocmV5L0RvY3VtZW50cy9Db2RleC8yMDI2LTEwLTE0L3NvLXgyMC93b3JrL1N1cHBvcnRQaWxvdC1hdXRoZW50aWNhdGVkLXYyLXVwZGF0ZS9TdXBwb3J0UGlsb3QtbWFpbi9mcm9udGVuZC9zcmMvdGVzdC9zZXR1cC50cyIsIi9zcmMvdGVzdC9zZXR1cC50cyIsW11d

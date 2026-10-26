@@ -1,0 +1,24 @@
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@tanstack/react-query/build/modern/index.js", {"importedNames":["QueryClient"]});
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@tanstack/react-router/dist/esm/index.dev.js", {"importedNames":["createRouter","rootRouteId"]});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vitest/dist/index.js", {"importedNames":["describe","expect","it"]});
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/src/routeTree.gen.ts", {"importedNames":["routeTree"]});
+
+
+
+
+// Match routes without running loaders or rendering: loaders may need a server or
+// network the test run lacks, and jsdom never loads the stylesheets React waits on.
+(0,__vite_ssr_import_2__.describe)("App routing", () => {
+	(0,__vite_ssr_import_2__.it)("matches a page for / instead of falling back to not found", () => {
+		const router = (0,__vite_ssr_import_1__.createRouter)({
+			routeTree: __vite_ssr_import_3__.routeTree,
+			context: { queryClient: new __vite_ssr_import_0__.QueryClient() }
+		});
+		const matches = router.matchRoutes("/");
+		(0,__vite_ssr_import_2__.expect)(matches.at(-1)?.routeId).not.toBe((0,__vite_ssr_import_1__.rootRouteId));
+	});
+});
+//# sourceMappingSource=vite-generated
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBRUE7Ozs7Ozs7QUFJQSxtQ0FBUyxxQkFBcUI7Q0FDNUIsNkJBQUcsbUVBQW1FO0VBQ3BFLE1BQU0sU0FBUyx1Q0FBYTtHQUFFO0dBQVcsU0FBUyxFQUFFLGFBQWEsSUFBSSxrQ0FBWSxFQUFFO0VBQUUsQ0FBQztFQUV0RixNQUFNLFVBQVUsT0FBTyxZQUFZLEdBQUc7RUFFdEMsaUNBQU8sUUFBUSxHQUFHLENBQUMsQ0FBQyxDQUFDLEVBQUUsT0FBTyxDQUFDLENBQUMsSUFBSSxRQUFLLGtDQUFXO0NBQ3RELENBQUM7QUFDSCxDQUFDIiwibmFtZXMiOltdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJhcHAtcm91dGluZy50ZXN0LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBRdWVyeUNsaWVudCB9IGZyb20gXCJAdGFuc3RhY2svcmVhY3QtcXVlcnlcIjtcbmltcG9ydCB7IGNyZWF0ZVJvdXRlciwgcm9vdFJvdXRlSWQgfSBmcm9tIFwiQHRhbnN0YWNrL3JlYWN0LXJvdXRlclwiO1xuaW1wb3J0IHsgZGVzY3JpYmUsIGV4cGVjdCwgaXQgfSBmcm9tIFwidml0ZXN0XCI7XG5cbmltcG9ydCB7IHJvdXRlVHJlZSB9IGZyb20gXCJAL3JvdXRlVHJlZS5nZW5cIjtcblxuLy8gTWF0Y2ggcm91dGVzIHdpdGhvdXQgcnVubmluZyBsb2FkZXJzIG9yIHJlbmRlcmluZzogbG9hZGVycyBtYXkgbmVlZCBhIHNlcnZlciBvclxuLy8gbmV0d29yayB0aGUgdGVzdCBydW4gbGFja3MsIGFuZCBqc2RvbSBuZXZlciBsb2FkcyB0aGUgc3R5bGVzaGVldHMgUmVhY3Qgd2FpdHMgb24uXG5kZXNjcmliZShcIkFwcCByb3V0aW5nXCIsICgpID0+IHtcbiAgaXQoXCJtYXRjaGVzIGEgcGFnZSBmb3IgLyBpbnN0ZWFkIG9mIGZhbGxpbmcgYmFjayB0byBub3QgZm91bmRcIiwgKCkgPT4ge1xuICAgIGNvbnN0IHJvdXRlciA9IGNyZWF0ZVJvdXRlcih7IHJvdXRlVHJlZSwgY29udGV4dDogeyBxdWVyeUNsaWVudDogbmV3IFF1ZXJ5Q2xpZW50KCkgfSB9KTtcblxuICAgIGNvbnN0IG1hdGNoZXMgPSByb3V0ZXIubWF0Y2hSb3V0ZXMoXCIvXCIpO1xuXG4gICAgZXhwZWN0KG1hdGNoZXMuYXQoLTEpPy5yb3V0ZUlkKS5ub3QudG9CZShyb290Um91dGVJZCk7XG4gIH0pO1xufSk7XG4iXSwiZmlsZSI6Ii9zcmMvdGVzdC9hcHAtcm91dGluZy50ZXN0LnRzeCJ9
+
+//# vitestCache=W3siZmlsZSI6IjEiLCJpZCI6IjEiLCJ1cmwiOiIyIiwiaW1wb3J0ZWRVcmxzIjoiMyIsIm1hcHBpbmdzIjpmYWxzZX0sIkM6L1VzZXJzL3NocmV5L0RvY3VtZW50cy9Db2RleC8yMDI2LTEwLTE0L3NvLXgyMC93b3JrL1N1cHBvcnRQaWxvdC1hdXRoZW50aWNhdGVkLXYyLXVwZGF0ZS9TdXBwb3J0UGlsb3QtbWFpbi9mcm9udGVuZC9zcmMvdGVzdC9hcHAtcm91dGluZy50ZXN0LnRzeCIsIi9zcmMvdGVzdC9hcHAtcm91dGluZy50ZXN0LnRzeCIsW11d
